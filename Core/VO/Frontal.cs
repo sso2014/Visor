@@ -5,7 +5,21 @@ using System.Text;
 
 namespace Core.VO
 {
-    class Frontal
+    public class Frontal : Equipo
     {
+        public Frontal() { 
+        }
+
+        public Panel Panel
+        {
+            get;
+            set;
+
+        }
+        public int MOTOR
+        {
+            get;
+            set;
+        }
     }
 }

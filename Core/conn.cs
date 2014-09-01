@@ -12,20 +12,18 @@ namespace Core
 {
     public class conn
     {
+        
+        private string StringConnection = @"Data Source=TELEMETRIA-PC\WINCC;Initial Catalog=Visor;Integrated Security=True";
 
-        private string StringConnection = "";
+        public SqlConnection GetConnection() {
 
-        public OleDbConnection GetOldbConnection()
-        {
+            SqlConnection con = new SqlConnection(StringConnection);
+            
             try
             {
-
-                OleDbConnection con = new OleDbConnection();
-                
                 con.Open();
 
-                if (con.State == ConnectionState.Open)
-                {
+                if (con.State == ConnectionState.Open) {
                     return con;
                 }
                 else {
@@ -35,6 +33,6 @@ namespace Core
             catch (Exception exp) {
                 return null;
             }
-        }
+        }    
     }
 }

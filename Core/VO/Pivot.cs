@@ -5,13 +5,14 @@ using System.Text;
 
 namespace Core.VO
 {
-    public abstract class Equipo
+    public class Pivot : Equipo
     {
-        public Equipo() { 
+
+        public Pivot() { 
         
         }
 
-        public int ID
+        internal Panel Panel
         {
             get
             {
@@ -21,7 +22,8 @@ namespace Core.VO
             {
             }
         }
-        public int TRAMOS
+
+        public int RADIO
         {
             get
             {
