@@ -11,25 +11,15 @@ namespace Core.VO
         
         }
 
-        public int ID
+        public string ID
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int TRAMOS
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }

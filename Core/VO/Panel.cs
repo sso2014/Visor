@@ -14,64 +14,123 @@ namespace Core.VO
 
         public int ALARMA_SEG
         {
-           get;
-           set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int ANGULO
         {
-           get;
-           set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int APLICACION
         {
-         get;
-         set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int CAMINANDO
         {
-          get;
-          set;
-          
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int ESPERANDO_PRES
         {
-           get;
-           set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int FALLA_ELECTRICA
         {
-            get;
-            set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int HABILITADO
         {
-           get;
-           set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
-        public int ID
+        public string ID
         {
-          get;
-          set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int PRESION
         {
-          get;
-          set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int SECO
         {
-          get;
-          set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int SENTIDO
         {
-                get;
-                set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         public int TENSION
         {
-              get;
-              set;
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
 
         public void Marcha()
