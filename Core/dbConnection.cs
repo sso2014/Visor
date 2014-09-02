@@ -11,13 +11,11 @@ namespace Core
 
     public class dbConnection
     {
-        
         private SqlDataAdapter myAdapter;
         private SqlConnection conn;
         private string StringConnection = @"Data Source=TELEMETRIA-PC\WINCC;Initial Catalog=Visor;Integrated Security=True";
         //private string StringConnection = @"Data Source=TELEMETRIA-PC;Initial Catalog=Visor;Integrated Security=True";
         //private string StringConnection = @"Data Source=SSO;Initial Catalog=Visor;Integrated Security=True";
-        
         public dbConnection()
         {
             myAdapter = new SqlDataAdapter();

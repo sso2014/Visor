@@ -7,22 +7,9 @@ namespace Core.VO
 {
     public class Pivot : Equipo
     {
-
         public Pivot() { 
         
         }
-
-        internal Panel Panel
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public int RADIO
         {
             get

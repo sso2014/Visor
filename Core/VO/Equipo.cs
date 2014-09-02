@@ -21,5 +21,10 @@ namespace Core.VO
             get;
             set;
         }
+        public Panel Panel
+        {
+            get;
+            set;
+        }
     }
 }

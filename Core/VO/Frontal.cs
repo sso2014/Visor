@@ -9,13 +9,6 @@ namespace Core.VO
     {
         public Frontal() { 
         }
-
-        public Panel Panel
-        {
-            get;
-            set;
-
-        }
         public int MOTOR
         {
             get;

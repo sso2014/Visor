@@ -22,7 +22,7 @@ namespace Core.BUS
         {
             List<Equipo> equipos = new List<Equipo>();
 
-            foreach (DataRow dr in userDao.getEquipos().Rows)
+            foreach (DataRow dr in userDao.GetEquipos().Rows)
             {
                 if (dr["ID"].ToString().Substring(0, 2) == "P_")
                 {

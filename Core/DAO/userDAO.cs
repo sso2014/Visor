@@ -14,9 +14,9 @@ namespace Core.DAO
           conn = new dbConnection();
         }
 
-        dbConnection conn;
-
-        public DataTable getEquipos()
+        private dbConnection conn;
+    
+        public DataTable GetEquipos()
         {
             string query = string.Format(
                 "READ_ALL_EQUIPO");

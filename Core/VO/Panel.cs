@@ -2,152 +2,108 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
+using System.Net.Sockets;
+
 
 namespace Core.VO
 {
     public class Panel
     {
-
-        public Panel() { 
-        
+        public Panel() {
+            //IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 10000 + Convert.ToInt32(ID.Substring(2,3)));
+            //sck = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            //sck.Bind(endPoint);
         }
 
+        public Panel(string ID)
+        {
+            IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 10000 + Convert.ToInt32(ID.Substring(2, 3)));
+            sck = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            sck.Bind(endPoint);
+        }
+
+        private Socket sck = null;
+        
         public int ALARMA_SEG
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int ANGULO
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int APLICACION
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int CAMINANDO
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int ESPERANDO_PRES
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int FALLA_ELECTRICA
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int HABILITADO
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public string ID
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int PRESION
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int SECO
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int SENTIDO
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public int TENSION
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
-
+        
         public void Marcha()
         {
-            throw new System.NotImplementedException();
+            
         }
         public void Parada()
         {
-            throw new System.NotImplementedException();
+          
         }
         public void Foward()
         {
-            throw new System.NotImplementedException();
         }
         public void Reversa()
         {
-            throw new System.NotImplementedException();
+           
+        }
+        
+        public Socket GetConnection() {
+            return sck;
         }
     }
 }
