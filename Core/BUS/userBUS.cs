@@ -27,14 +27,15 @@ namespace Core.BUS
                 if (dr["ID"].ToString().Substring(0, 2) == "P_")
                 {
                     equipos.Add(
-                    new Pivot() { ID = (string)dr["ID"], Panel = new Panel() { ID = (string)dr["ID"] }});
+                    new Pivot()   { ID = (string)dr["ID"], Panel = new Panel((string)dr["ID"])});
                 }
                 else if (dr["ID"].ToString().Substring(0, 2) == "F_")
                 {
                     equipos.Add(
-                    new Frontal() {  ID = (string)dr["ID"], Panel = new Panel() { ID = (string)dr["ID"] }});
+                    new Frontal() { ID = (string)dr["ID"], Panel = new Panel((string)dr["ID"])});
                 }
             }
+
             return equipos;
         }
     }

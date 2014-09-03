@@ -5,24 +5,25 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 
-
 namespace Core.VO
 {
-    public class Panel
+    public class Panel:StateObject
     {
         public Panel() {
             //IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 10000 + Convert.ToInt32(ID.Substring(2,3)));
             //sck = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             //sck.Bind(endPoint);
         }
+        public Panel(string ID) {
+            
+            this.ID = ID;
 
-        public Panel(string ID)
-        {
-            IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 10000 + Convert.ToInt32(ID.Substring(2, 3)));
+            Console.WriteLine("Creando Panel: {0}", this.ID);
+            IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse("105.1.4.223"), 10000 + Convert.ToInt32(ID.Substring(2, 3)));
             sck = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             sck.Bind(endPoint);
         }
-
+        
         private Socket sck = null;
         
         public int ALARMA_SEG
@@ -101,7 +102,8 @@ namespace Core.VO
         {
            
         }
-        
+
+        public string data = string.Empty;
         public Socket GetConnection() {
             return sck;
         }
