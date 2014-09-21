@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Core.VO.Equipo">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgBAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>VO\Equipo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Panel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Core.VO.Panel">
+    <Position X="6" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABBARgIAEAABgAACAAAAAkAAEAAAAAAAACAQABAAAAg=</HashCode>
+      <FileName>VO\Panel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.VO.Pivot">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAg=</HashCode>
+      <FileName>VO\Pivot.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.VO.Frontal">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VO\Frontal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Superficie">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAACAAAAAAAABAAAAAAAAAAgACAAAAAAAAA=</HashCode>
+      <FileName>VO\Superficie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Equipo" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="Core.VO.IPaintable">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAg=</HashCode>
+      <FileName>VO\IPaintable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Core.VO.EquipoType">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VO\EquipoType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

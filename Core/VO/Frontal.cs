@@ -7,7 +7,8 @@ namespace Core.VO
 {
     public class Frontal : Equipo
     {
-        public Frontal() { 
+        public Frontal() {
+ 
         }
         public int MOTOR
         {

@@ -26,7 +26,7 @@ namespace Core.VO
         
         private Socket sck = null;
         
-        public int ALARMA_SEG
+        public bool ALARMA_SEG
         {
             get;
             set;
@@ -41,22 +41,22 @@ namespace Core.VO
             get;
             set;
         }
-        public int CAMINANDO
+        public bool CAMINANDO
         {
             get;
             set;
         }
-        public int ESPERANDO_PRES
+        public bool ESPERANDO_PRES
         {
             get;
             set;
         }
-        public int FALLA_ELECTRICA
+        public bool FALLA_ELECTRICA
         {
             get;
             set;
         }
-        public int HABILITADO
+        public bool HABILITADO
         {
             get;
             set;
@@ -71,12 +71,17 @@ namespace Core.VO
             get;
             set;
         }
+        public bool PRESION_NOR
+        {
+            get;
+            set;
+        }
         public int SECO
         {
             get;
             set;
         }
-        public int SENTIDO
+        public bool SENTIDO
         {
             get;
             set;
@@ -86,7 +91,6 @@ namespace Core.VO
             get;
             set;
         }
-        
         public void Marcha()
         {
             
@@ -102,7 +106,6 @@ namespace Core.VO
         {
            
         }
-
         public string data = string.Empty;
         public Socket GetConnection() {
             return sck;

@@ -10,7 +10,6 @@ namespace Core.VO
         public Equipo() { 
         
         }
-
         public string ID
         {
             get;
